@@ -49,6 +49,8 @@ To use this project, clone the repo on your device using the command below:
 
 ```git clone https://github.com/mohushi/PredictIt-Poll-Trader.git```
 
+marketdata.py, pitrader.py, and pollchecker.py located within the src file.
+
 # Requirements
 [(Back to top)](#table-of-contents)
 
