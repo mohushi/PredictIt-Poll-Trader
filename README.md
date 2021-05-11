@@ -17,7 +17,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 # Demo-Preview
 
 <!-- Add a demo for your project -->
-![Trading Demo](combined_gif_FINAL.gif)
+![Trading Demo](./references/combined_gif_FINAL.gif)
 
 The primary use case of this library involves:
 
@@ -98,7 +98,7 @@ There are a few things to note here.
 * Finally, the ```async_script()``` function from pollchecker.py runs until completion. That is, the function will only complete once the polling value has changed significantly enough to change the trading bracket that it falls into. For example, suppose in the screenshot below, that Trump's approval rating is currently 42.4% (bracket 3, 0-index). If FiveThirtyEight updates the approval rating to 42.6%, ```async_script()``` will NOT terminate becauses the rating remains in the same bracket and is thus immaterial to trading. However, if the rating instead changed from 42.4% to 43.9%, the function would terminate and return the target bracket of 6. In the code snippet above, this target bracket is passed to PiTrader which would automatically place buy orders on bracket 6 YES.
 
 <p align="center">
-  <img src="Purchase_example.png">
+  <img src="references/Purchase_example.png">
 </p>
 
 
