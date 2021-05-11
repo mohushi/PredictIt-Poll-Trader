@@ -43,12 +43,11 @@ Here is a random GIF as a placeholder.
 # Installation
 [(Back to top)](#table-of-contents)
 
-To use this project, first clone the repo on your device using the command below:
-Provide instructions on using chromedriver. What version?
+To use this project, clone the repo on your device using the command below:
 
 ```git init```
 
-```git clone MY_GITHUB_REPO.git```
+```git clone https://github.com/mohushi/PredictIt-Poll-Trader.git```
 
 # Requirements
 [(Back to top)](#table-of-contents)
