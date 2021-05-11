@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="966" height="600" src="banner_edit.png">
+    <img width="966" height="600" src="./references/banner.png">
  </p>
 
 # PredictIt Poll Trader
@@ -17,7 +17,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 # Demo-Preview
 
 <!-- Add a demo for your project -->
-![Trading Demo](./references/combined_gif_FINAL.gif)
+![Trading Demo](./references/demo.gif)
 
 The primary use case of this library involves:
 
@@ -31,10 +31,6 @@ Here is a random GIF as a placeholder.
 ![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
 
 # Table of contents
-
-<!-- After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
-
-Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
 - [PredictIt Poll Trader](#predictit-poll-trader)
 - [Demo-Preview](#demo-preview)
@@ -98,7 +94,7 @@ There are a few things to note here.
 * Finally, the ```async_script()``` function from pollchecker.py runs until completion. That is, the function will only complete once the polling value has changed significantly enough to change the trading bracket that it falls into. For example, suppose in the screenshot below, that Trump's approval rating is currently 42.4% (bracket 3, 0-index). If FiveThirtyEight updates the approval rating to 42.6%, ```async_script()``` will NOT terminate becauses the rating remains in the same bracket and is thus immaterial to trading. However, if the rating instead changed from 42.4% to 43.9%, the function would terminate and return the target bracket of 6. In the code snippet above, this target bracket is passed to PiTrader which would automatically place buy orders on bracket 6 YES.
 
 <p align="center">
-  <img src="references/Purchase_example.png">
+  <img src="./references/purchase.png">
 </p>
 
 
@@ -113,7 +109,7 @@ I began this project with the intention of refining several aspects of my data s
 While configuring the data pipeline, I noticed a small delay between updates from the polling sources and corresponding price corrections in the market. For example, if RealClearPolitics (RCP) updated the polling value from 4.9 to 5.1, then it took approximatedly 10 seconds for traders to recognize this change, sell shares corresponding to 4.9, and purchase shares corresponding to 5.1. Realizing the arbitrage opportunity, I pivoted to this automated trader project and focused on optimizing for speed through asynchronous processes.
 
 <p align="center">
-  <img src="ProfitOT_final.png">
+  <img src="./references/Profit_over_time.png">
 </p>
 
 ### Results
